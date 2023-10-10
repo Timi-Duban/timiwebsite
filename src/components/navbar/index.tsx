@@ -7,7 +7,7 @@ export default async function Navbar (props: INavbarProps) {
   const { t } = await initTranslations(locale, ['common']);
 
   return (
-    <div className='bg-neutral-900 flex flex-row justify-between h-8'>
+    <div className='bg-neutral-900 flex flex-row justify-between h-12 px-2'>
       <div className='flex flex-row items-center text-neutral-50 text-xs'>
         <p className='px-1'>{t('aboutMe')}</p>
         <p className='px-1'>{t('services')}</p>
