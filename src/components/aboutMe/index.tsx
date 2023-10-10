@@ -7,9 +7,9 @@ export default async function AboutMe (props: IAboutMeProps) {
   const { t } = await initTranslations(locale, ['common']);
 
   return (
-  <div className='bg-neutral-200 p-2'>
-    <Title title={t('aboutMe')} />
-    <p className='text-xs whitespace-pre-wrap'>{t('aboutMeBody')}</p>
-  </div>
-  );
+    <div className='bg-neutral-200 p-2 flex-1'>
+      <Title title={t('aboutMe')} />
+      <p className='text-xs whitespace-pre-wrap'>{t('aboutMeBody')}</p>
+    </div>
+    );
 }

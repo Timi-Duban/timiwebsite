@@ -12,8 +12,10 @@ export default async function Home({params}: IHomeProps) {
 
   return (
     <div>
-      <AboutMe locale={locale} />
-      <Services locale={locale} />
+      <div className='flex flex-col md:flex-row'>
+        <AboutMe locale={locale} />
+        <Services locale={locale} />
+      </div>
       <Skills locale={locale} />
       <div className='bg-neutral-200'>
         <Title title={t('pastExperiences')} />
