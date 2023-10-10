@@ -1,3 +1,7 @@
 {
-    "aboutMe": "About me"
+    "aboutMe": "About me",
+    "services": "Services",
+    "skills": "Skills",
+    "pastExperiences": "Past Experiences",
+    "contact": "Contact"
 }
