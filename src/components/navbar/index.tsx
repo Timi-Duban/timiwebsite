@@ -8,12 +8,12 @@ export default async function Navbar (props: INavbarProps) {
 
   return (
     <div className='bg-neutral-900 flex flex-row justify-between h-8'>
-      <div className='flex flex-row items-center'>
-        <p className='text-white text-xs px-1'>{t('aboutMe')}</p>
-        <p className='text-white text-xs px-1'>{t('services')}</p>
-        <p className='text-white text-xs px-1'>{t('skills')}</p>
-        <p className='text-white text-xs px-1'>{t('pastExperiences')}</p>
-        <p className='text-white text-xs px-1'>{t('contact')}</p>
+      <div className='flex flex-row items-center text-neutral-50 text-xs'>
+        <p className='px-1'>{t('aboutMe')}</p>
+        <p className='px-1'>{t('services')}</p>
+        <p className='px-1'>{t('skills')}</p>
+        <p className='px-1'>{t('pastExperiences')}</p>
+        <p className='px-1'>{t('contact')}</p>
       </div>
       <LangChanger locale={locale} />
     </div>

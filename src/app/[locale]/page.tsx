@@ -1,5 +1,6 @@
 import AboutMe from "@/components/aboutMe";
 import Contact from "@/components/contact";
+import Services from "@/components/services";
 import Skills from "@/components/skills";
 import Title from "@/components/title";
 import initTranslations from "@/i18n";
@@ -12,6 +13,7 @@ export default async function Home({params}: IHomeProps) {
   return (
     <div>
       <AboutMe locale={locale} />
+      <Services locale={locale} />
       <Skills locale={locale} />
       <div className='bg-neutral-200'>
         <Title title={t('pastExperiences')} />
