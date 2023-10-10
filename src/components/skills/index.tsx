@@ -6,7 +6,7 @@ export default async function Skills (props: ISkillsProps) {
   const { locale } = props;
   const { t } = await initTranslations(locale, ['common']);
   return (
-    <div className='bg-neutral-200'>
+    <div className='bg-neutral-200 md:bg-neutral-700'>
       <Title title={t('skills')} />
     </div>
   );
