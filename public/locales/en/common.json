@@ -9,5 +9,8 @@
     "mobileBody": "Thanks to React-Native, I can develop one app and publish it on both iOS and Android, dividing the native-app cost by 2! With React-Native-Web, it even includes the web app... that's why I love it so much <3",
     "webApp": "Web-only",
     "webBody": "For simple Web-only projects, or for highly sophisticated projects, Next.js allows to go deeper and simpler than React-Native, still using the power of React.",
-    "downloadCV": "Download my CV"
+    "downloadCV": "Download my CV",
+    "name": "Name",
+    "subject": "Subject",
+    "subjectPlaceholder": "Web site, ..."
 }

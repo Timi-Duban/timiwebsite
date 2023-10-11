@@ -9,6 +9,9 @@
     "mobileBody": "TODO French body",
     "webApp": "Application web",
     "webBody": "TODO French body",
-    "downloadCV": "Télécharger mon CV"
+    "downloadCV": "Télécharger mon CV",
+    "name": "Nom",
+    "subject": "Objet",
+    "subjectPlaceholder": "Site web, ..."
 
 }
