@@ -2,7 +2,7 @@ import AboutMe from "@/components/aboutMe";
 import Contact from "@/components/contact";
 import Services from "@/components/services";
 import Skills from "@/components/skills";
-import Title from "@/components/title";
+import { TitleDl } from "@/components/title";
 import initTranslations from "@/i18n";
 
 interface IHomeProps {params: {locale: string}}
@@ -18,7 +18,7 @@ export default async function Home({params}: IHomeProps) {
       </div>
       <Skills locale={locale} />
       <div className='bg-neutral-700 md:bg-neutral-200'>
-        <Title title={t('pastExperiences')} />
+        <TitleDl title={t('pastExperiences')} />
       </div>
       <Contact locale={locale} />
     </div>

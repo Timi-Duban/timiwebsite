@@ -12,6 +12,9 @@
     "downloadCV": "Télécharger mon CV",
     "name": "Nom",
     "subject": "Objet",
-    "subjectPlaceholder": "Site web, ..."
+    "subjectPlaceholder": "Site web, ...",
+    "contactIntro": "Des idées ? Des questions ? Un devis ?",
+    "contactMe": "Contactez moi !",
+    "findMe": "Je suis présent sur :"
 
 }

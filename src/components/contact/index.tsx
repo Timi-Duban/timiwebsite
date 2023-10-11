@@ -1,7 +1,8 @@
 import initTranslations from "@/i18n";
-import Title from "../title";
+import { TitleLd } from "../title";
 import { DownloadIcon } from "../icons";
 import Form from "./form";
+import { SocialLinks } from "./socialLinks";
 
 interface IContactProps {locale: string}
 export default async function Contact (props: IContactProps) {
@@ -9,15 +10,22 @@ export default async function Contact (props: IContactProps) {
   const { t } = await initTranslations(locale, ['common']);
 
   return (
-    <div className='bg-neutral-200 md:bg-neutral-700 pb-2 pt-0'>
-      <Title title={t('contact')} />
+    <div className='bg-neutral-200 md:bg-neutral-700 pb-2 pt-0 md:text-neutral-50'>
+      <TitleLd title={t('contact')} />
       <div className='flex'>
-        <Form locale={locale} />
-        <div className='bg-blue-300 flex-1 opacity-30' />
+        <Form />
+        <div className='flex flex-1 flex-col justify-evenly items-center text-center'>
+          <p className='text-lg font-medium md:font-normal'>{t('contactIntro')}</p>
+          <h2 className='text-xl font-bold md:font-semibold'>{t('contactMe')}</h2>
+          <div className='flex w-full flex-col items-center font-medium md:font-normal'>
+            <p className='text-lg/4 '>{t('findMe')}</p>
+            <SocialLinks />
+          </div>
+        </div>
       </div>
-      <div className='flex justify-center md:text-neutral-50 text-center pt-6'>
+      <div className='flex justify-center text-center pt-6'>
         <DownloadIcon />
-        <p className='ml-1'>{t('downloadCV')}</p>
+        <p className='ml-2'>{t('downloadCV')}</p>
       </div>
     </div>
   );

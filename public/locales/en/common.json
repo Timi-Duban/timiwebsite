@@ -12,5 +12,8 @@
     "downloadCV": "Download my CV",
     "name": "Name",
     "subject": "Subject",
-    "subjectPlaceholder": "Web site, ..."
+    "subjectPlaceholder": "Web site, ...",
+    "contactIntro": "Ideas? Questions? Quotation?",
+    "contactMe": "Contact me!",
+    "findMe": "Find me on:"
 }

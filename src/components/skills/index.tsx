@@ -6,7 +6,7 @@ import nextJsLogo from '@/assets/skills/next-js.svg'
 import nestLogo from '@/assets/skills/nest.svg'
 import nodeJsLogo from '@/assets/skills/nodejs.svg'
 import reduxLogo from '@/assets/skills/redux.svg'
-import Title from "../title";
+import { TitleLd } from "../title";
 import LabeledImage, { SecondaryImage } from "./labeledImage";
 
 interface ISkillsProps {locale: string}
@@ -14,13 +14,13 @@ export default async function Skills (props: ISkillsProps) {
   const { locale } = props;
   const { t } = await initTranslations(locale, ['common']);
   return (
-    <div className='bg-neutral-200 md:bg-neutral-700'>
-      <Title title={t('skills')} />
+    <div className='bg-neutral-200 md:bg-neutral-700 md:text-neutral-50'>
+      <TitleLd title={t('skills')} />
       <div className='flex justify-evenly flex-wrap p-4'>
         <LabeledImage alt='MySQL logo' image={mySqlLogo} label="SQL" />
         <LabeledImage alt='MongoDB logo' image={mongoDbLogo} label="NoSQL" />
         <LabeledImage alt='Next.js Logo' image={nextJsLogo} label="Next.js" />
-        <LabeledImage alt='React logo' image={reactLogo} label={'React\nNative\nWeb'} />
+        <LabeledImage alt='React logo' image={reactLogo} label={'React\nNative\nWeb'} opacity={93}/>
         <div>
           <LabeledImage alt='Nest logo' image={nestLogo} label="Nest" />
           <SecondaryImage alt='Nodejs logo' image={nodeJsLogo} label="Including" />

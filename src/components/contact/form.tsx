@@ -3,9 +3,8 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-interface IFormProps {locale: string}
-export default function Form (props: IFormProps) {
-    const { locale } = props;
+interface IFormProps {}
+export default function Form () {
     const { t } = useTranslation();
     const [res, setRes] = useState('');
 
@@ -51,13 +50,13 @@ export default function Form (props: IFormProps) {
     return (
         <div className='flex flex-1 justify-center my-8'>
             <form
-                className='w-3/4' 
+                className='w-4/5' 
                 method='post' onSubmit={handleSubmit}
             >
                 <input type='hidden' name='access_key' value='4df3931f-4d05-4e2f-ae1d-10a593c366a8' />
                 <div className='flex flex-wrap -mx-3 mb-4'>
                     <div className='w-full md:w-1/2 px-3 mb-4 md:mb-0'>
-                        <label className='block uppercase tracking-wide md:text-neutral-50 text-xs font-bold'>
+                        <label className='block uppercase tracking-wide text-xs font-semibold md:font-medium'>
                             {t('name')}
                         <input 
                             className='appearance-none focus:outline-none focus:bg-white focus:border-neutral-500 block w-full rounded py-3 px-4 leading-tight bg-neutral-100 md:bg-neutral-200 text-neutral-700 border border-neutral-200'
@@ -66,7 +65,7 @@ export default function Form (props: IFormProps) {
                         </label>
                     </div>
                     <div className='w-full md:w-1/2 px-3'>
-                        <label className='block uppercase tracking-wide md:text-neutral-50 text-xs font-bold'>
+                        <label className='block uppercase tracking-wide text-xs font-semibold md:font-medium'>
                             Email
                         <input 
                             className='appearance-none focus:outline-none focus:bg-white focus:border-neutral-500 block w-full rounded py-3 px-4 leading-tight bg-neutral-100 md:bg-neutral-200 text-neutral-700 border border-neutral-200'
@@ -77,7 +76,7 @@ export default function Form (props: IFormProps) {
                 </div>
                 <div className='flex flex-wrap -mx-3 mb-4'>
                     <div className='w-full px-3'>
-                        <label className='block uppercase tracking-wide md:text-neutral-50 text-xs font-bold'>
+                        <label className='block uppercase tracking-wide text-xs font-semibold md:font-medium'>
                             {t('subject')}
                         <input 
                             className='appearance-none focus:outline-none focus:bg-white focus:border-neutral-500 block w-full rounded py-3 px-4 leading-tight bg-neutral-100 md:bg-neutral-200 text-neutral-700 border border-neutral-200'
@@ -88,10 +87,10 @@ export default function Form (props: IFormProps) {
                 </div>
                 <div className='flex flex-wrap -mx-3 mb-4'>
                     <div className='w-full px-3'>
-                        <label className='block uppercase tracking-wide md:text-neutral-50 text-xs font-bold'>
+                        <label className='block uppercase tracking-wide text-xs font-semibold md:font-medium'>
                             Message
                         <textarea
-                            className='no-resize appearance-none block w-full bg-neutral-100 md:bg-neutral-200 text-neutral-700 border border-neutral-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-neutral-500 h-48 resize-none'
+                            className='no-resize appearance-none block w-full bg-neutral-100 md:bg-neutral-200 text-neutral-700 border border-neutral-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-neutral-500 h-24 md:h-48 resize-none'
                             name='message' placeholder='Message'
                         />
                         </label>
@@ -101,7 +100,7 @@ export default function Form (props: IFormProps) {
                 Send
                 </button>
 
-                <p className='md:text-neutral-50 text-lg font-bold text-center mt-2 '>{res}</p>
+                <p className='text-lg font-bold text-center mt-2 '>{res}</p>
             </form>
         </div>
     );
