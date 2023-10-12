@@ -11,7 +11,7 @@ export default async function Contact (props: IContactProps) {
   const { t } = await initTranslations(locale, ['common']);
 
   return (
-    <div className='bg-neutral-200 md:bg-neutral-700 pb-2 pt-0 md:text-neutral-50' id='contact'>
+    <div className='bg-neutral-200 md:bg-neutral-700 pb-5 pt-0 md:text-neutral-50' id='contact'>
       <TitleLd title={t('contact')} />
       <div className='flex'>
         <Form />

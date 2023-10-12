@@ -8,8 +8,8 @@ export default async function Navbar (props: INavbarProps) {
   const { t } = await initTranslations(locale, ['common']);
 
   return (
-    <div className='bg-neutral-900 flex flex-row justify-between h-12 px-2'>
-      <div className='flex flex-row items-center text-neutral-50 text-xs'>
+    <div className='border-b-[3.5px] border-cyan-700 bg-neutral-900 sticky top-0 z-50 w-full flex flex-row justify-between h-12 px-2 shadow-lg'>
+      <div className='flex flex-row items-center text-neutral-200 text-xs'>
         <NavLink href='#aboutMe' label={t('aboutMe')} />
         <NavLink href='#services' label={t('services')} />
         <NavLink href='#skills' label={t('skills')} />
