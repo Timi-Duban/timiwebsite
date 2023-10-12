@@ -1,5 +1,6 @@
 import initTranslations from "@/i18n";
 import LangChanger from './langChanger';
+import { NavLink } from "./navLink";
 
 interface INavbarProps {locale: string}
 export default async function Navbar (props: INavbarProps) {
@@ -9,11 +10,11 @@ export default async function Navbar (props: INavbarProps) {
   return (
     <div className='bg-neutral-900 flex flex-row justify-between h-12 px-2'>
       <div className='flex flex-row items-center text-neutral-50 text-xs'>
-        <p className='px-1'>{t('aboutMe')}</p>
-        <p className='px-1'>{t('services')}</p>
-        <p className='px-1'>{t('skills')}</p>
-        <p className='px-1'>{t('pastExperiences')}</p>
-        <p className='px-1'>{t('contact')}</p>
+        <NavLink href='#aboutMe' label={t('aboutMe')} />
+        <NavLink href='#services' label={t('services')} />
+        <NavLink href='#skills' label={t('skills')} />
+        <NavLink href='#pastExperiences' label={t('pastExperiences')} />
+        <NavLink href='#contact' label={t('contact')} />
       </div>
       <LangChanger locale={locale} />
     </div>

@@ -54,12 +54,12 @@ export default function Form () {
                 method='post' onSubmit={handleSubmit}
             >
                 <input type='hidden' name='access_key' value='4df3931f-4d05-4e2f-ae1d-10a593c366a8' />
-                <div className='flex flex-wrap -mx-3 mb-4'>
-                    <div className='w-full md:w-1/2 px-3 mb-4 md:mb-0'>
+                <div className='flex flex-wrap -mx-3 mb-2'>
+                    <div className='w-full md:w-1/2 px-3 mb-2 md:mb-0'>
                         <label className='block uppercase tracking-wide text-xs font-semibold md:font-medium'>
                             {t('name')}
                         <input 
-                            className='appearance-none focus:outline-none focus:bg-white focus:border-neutral-500 block w-full rounded py-3 px-4 leading-tight bg-neutral-100 md:bg-neutral-200 text-neutral-700 border border-neutral-200'
+                            className='appearance-none focus:outline-none focus:bg-white focus:border-neutral-500 block w-full rounded py-2 px-4 leading-tight bg-neutral-100 md:bg-neutral-200 text-neutral-700 border border-neutral-200'
                             type='text' placeholder={t('name')} name='name' required
                         />
                         </label>
@@ -68,29 +68,29 @@ export default function Form () {
                         <label className='block uppercase tracking-wide text-xs font-semibold md:font-medium'>
                             Email
                         <input 
-                            className='appearance-none focus:outline-none focus:bg-white focus:border-neutral-500 block w-full rounded py-3 px-4 leading-tight bg-neutral-100 md:bg-neutral-200 text-neutral-700 border border-neutral-200'
+                            className='appearance-none focus:outline-none focus:bg-white focus:border-neutral-500 block w-full rounded py-2 px-4 leading-tight bg-neutral-100 md:bg-neutral-200 text-neutral-700 border border-neutral-200'
                             type='email' placeholder='Email' name='email' required
                         />
                         </label>
                     </div>
                 </div>
-                <div className='flex flex-wrap -mx-3 mb-4'>
+                <div className='flex flex-wrap -mx-3 mb-2'>
                     <div className='w-full px-3'>
                         <label className='block uppercase tracking-wide text-xs font-semibold md:font-medium'>
                             {t('subject')}
                         <input 
-                            className='appearance-none focus:outline-none focus:bg-white focus:border-neutral-500 block w-full rounded py-3 px-4 leading-tight bg-neutral-100 md:bg-neutral-200 text-neutral-700 border border-neutral-200'
+                            className='appearance-none focus:outline-none focus:bg-white focus:border-neutral-500 block w-full rounded py-2 px-4 leading-tight bg-neutral-100 md:bg-neutral-200 text-neutral-700 border border-neutral-200'
                             type='text' name='subject' placeholder={t('subjectPlaceholder')} required
                         />
                         </label>
                     </div>
                 </div>
-                <div className='flex flex-wrap -mx-3 mb-4'>
+                <div className='flex flex-wrap -mx-3 mb-2'>
                     <div className='w-full px-3'>
                         <label className='block uppercase tracking-wide text-xs font-semibold md:font-medium'>
                             Message
                         <textarea
-                            className='no-resize appearance-none block w-full bg-neutral-100 md:bg-neutral-200 text-neutral-700 border border-neutral-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-neutral-500 h-24 md:h-48 resize-none'
+                            className='no-resize appearance-none block w-full bg-neutral-100 md:bg-neutral-200 text-neutral-700 border border-neutral-200 rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:border-neutral-500 h-24 md:h-48 resize-none'
                             name='message' placeholder='Message'
                         />
                         </label>

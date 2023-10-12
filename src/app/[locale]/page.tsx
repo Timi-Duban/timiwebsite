@@ -17,7 +17,7 @@ export default async function Home({params}: IHomeProps) {
         <Services locale={locale} />
       </div>
       <Skills locale={locale} />
-      <div className='bg-neutral-700 md:bg-neutral-200'>
+      <div className='bg-neutral-700 md:bg-neutral-200' id='pastExperiences'>
         <TitleDl title={t('pastExperiences')} />
       </div>
       <Contact locale={locale} />
