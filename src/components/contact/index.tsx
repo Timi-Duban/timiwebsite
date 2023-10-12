@@ -1,8 +1,9 @@
-import initTranslations from "@/i18n";
-import { TitleLd } from "../title";
-import { DownloadIcon } from "../icons";
-import Form from "./form";
-import { SocialLinks } from "./socialLinks";
+import initTranslations from '@/i18n';
+import { TitleLd } from '../title';
+import { DownloadIcon } from '../icons';
+import Form from './form';
+import { SocialLinks } from './socialLinks';
+import Link from 'next/link';
 
 interface IContactProps {locale: string}
 export default async function Contact (props: IContactProps) {
@@ -23,10 +24,13 @@ export default async function Contact (props: IContactProps) {
           </div>
         </div>
       </div>
+      {/* @ts-ignore - NextJS automatically passes down the <a> tag attributes*/}
+      <Link href={`/cv_${locale}.pdf`} alt='Download my CV' target='_blank' rel='noopener noreferrer' locale={false}> 
       <div className='flex justify-center text-center pt-6'>
         <DownloadIcon />
         <p className='ml-2'>{t('downloadCV')}</p>
       </div>
+      </Link>
     </div>
   );
 }
