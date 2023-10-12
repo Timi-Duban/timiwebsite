@@ -1,14 +1,12 @@
 import AboutMe from "@/components/aboutMe";
 import Contact from "@/components/contact";
+import PastExperiences from "@/components/pastExperiences";
 import Services from "@/components/services";
 import Skills from "@/components/skills";
-import { TitleDl } from "@/components/title";
-import initTranslations from "@/i18n";
 
 interface IHomeProps {params: {locale: string}}
 export default async function Home({params}: IHomeProps) {
   const {locale} = params;
-  const { t } = await initTranslations(locale, ['common']);
 
   return (
     <div>
@@ -17,9 +15,7 @@ export default async function Home({params}: IHomeProps) {
         <Services locale={locale} />
       </div>
       <Skills locale={locale} />
-      <div className='bg-neutral-700 md:bg-neutral-200' id='pastExperiences'>
-        <TitleDl title={t('pastExperiences')} />
-      </div>
+      <PastExperiences locale={locale} />
       <Contact locale={locale} />
     </div>
   )

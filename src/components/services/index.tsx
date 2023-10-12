@@ -8,7 +8,7 @@ export default async function Services (props: IServicesProps) {
   const { t } = await initTranslations(locale, ['common']);
 
   return (
-    <div className='bg-neutral-700 flex flex-1 flex-col md:bg-neutral-200' id='services'>
+    <div className='card bg-neutral-700 flex flex-1 flex-col md:bg-neutral-200' id='services'>
       <TitleDl title={t('services')} />
       <div className='flex flex-row text-neutral-50 text-center md:text-current my-auto p-5'>
         <div className='flex-1'>

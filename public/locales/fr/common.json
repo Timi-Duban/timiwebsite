@@ -15,6 +15,16 @@
     "subjectPlaceholder": "Site web, ...",
     "contactIntro": "Des idées ? Des questions ? Un devis ?",
     "contactMe": "Contactez moi !",
-    "findMe": "Je suis présent sur :"
+    "findMe": "Je suis présent sur :",
+    "exp1Title":"",
+    "exp1Body":"",
+    "exp2Title":"",
+    "exp2Body":"",
+    "exp3Title":"",
+    "exp3Body":"",
+    "exp4Title":"",
+    "exp4Body":"",
+    "exp5Title":"",
+    "exp5Body":""
 
 }

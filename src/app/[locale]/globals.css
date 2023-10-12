@@ -5,3 +5,12 @@
 html {
     scroll-padding-top: 3rem;
 }
+
+@layer components {
+    .cards {
+        border-radius: 0.75rem;
+        margin: 2rem;
+        margin-left: 4rem;
+        margin-left: 4rem;
+    }
+}
