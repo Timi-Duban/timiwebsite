@@ -9,8 +9,8 @@ export default async function Home({params}: IHomeProps) {
   const {locale} = params;
 
   return (
-    <div>
-      <div className='flex flex-col md:flex-row'>
+    <div className='bg-cyan-700 py-[1px]'>
+      <div className='flex flex-col md:flex-row md:w-[93%] md:mx-auto'>
         <AboutMe locale={locale} />
         <Services locale={locale} />
       </div>

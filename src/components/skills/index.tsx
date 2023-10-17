@@ -14,7 +14,7 @@ export default async function Skills (props: ISkillsProps) {
   const { locale } = props;
   const { t } = await initTranslations(locale, ['common']);
   return (
-    <div className='card rounded bg-neutral-200 md:bg-neutral-700 md:text-neutral-50 pb-2' id="skills">
+    <div className='card md:mt-0 bg-neutral-200 md:bg-neutral-700 md:text-neutral-50 pb-2' id="skills">
       <TitleLd title={t('skills')} />
       <div className='flex justify-evenly flex-wrap p-4'>
         <LabeledImage alt='MySQL logo' image={mySqlLogo} label="SQL" />

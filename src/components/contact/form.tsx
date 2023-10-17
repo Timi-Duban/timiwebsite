@@ -96,7 +96,7 @@ export default function Form () {
                         </label>
                     </div>
                 </div>
-                <button className='w-full shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded'>
+                <button className='w-full shadow bg-cyan-700 md:bg-cyan-600 hover:bg-cyan-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded'>
                 Send
                 </button>
 

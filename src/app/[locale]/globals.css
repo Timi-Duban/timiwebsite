@@ -7,10 +7,11 @@ html {
 }
 
 @layer components {
-    .cards {
-        border-radius: 0.75rem;
-        margin: 2rem;
-        margin-left: 4rem;
-        margin-left: 4rem;
+    .card {
+        border-radius: 1rem;
+        margin: 1.5rem;
+        width: 93%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
