@@ -58,7 +58,7 @@ export function GithubIcon () {
 export function EmailIcon () {
     return (
         <IconContext.Provider value={{ size: '1.5em' }}>
-            <div className='md:text-neutral-200'>
+            <div className='md:text-neutral-200 mr-1'>
                 <AiOutlineMail  />
             </div>
         </IconContext.Provider>

@@ -1,6 +1,32 @@
 'use client'
 
 import { useRouter } from 'next/navigation';
+import Image from 'next/image'
+import frFlag from '@/assets/frFlag.svg'
+import ukFlag from '@/assets/ukFlag.svg'
+
+const FrButton = () => (
+  <div className='w-5 h-5 mr-1 flex items-center'>
+      <Image
+          alt={'French flag'}
+          src={frFlag}
+          width={90}
+          height={60}
+      />
+  </div>
+);
+
+const EnButton = () => (
+<div className='w-5 h-5 mr-1 flex items-center'>
+      <Image
+          alt={'United Kingdom flag'}
+          src={ukFlag}
+          width={90}
+          height={60}
+      />
+  </div>
+);
+
 
 export interface ILangChangerProps {locale: string}
 export default function LangChanger (props: ILangChangerProps) {
@@ -21,12 +47,12 @@ export default function LangChanger (props: ILangChangerProps) {
   };
 
   return (
-    <div className='px-1 flex justify-center' >
+    <div className='px-1 flex items-center justify-center md:justify-end' >
         <button 
             className='text-white text-xs' 
             onClick={() => changeCookie()}
         >
-            {locale === 'fr' ? 'Eng' : 'Fr'} 
+          {locale === 'fr' ? <EnButton /> : <FrButton />}
         </button>
     </div>
   );

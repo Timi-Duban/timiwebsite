@@ -8,14 +8,12 @@ export default async function Navbar (props: INavbarProps) {
   const { t } = await initTranslations(locale, ['common']);
 
   return (
-    <div className='border-b-[2px] border-cyan-700 bg-neutral-900 sticky top-0 z-50 w-full flex flex-row justify-between h-12 px-2 shadow'>
-      <div className='flex flex-row items-center text-neutral-200 text-xs md:text-sm'>
-        <NavLink href='#aboutMe' label={t('aboutMe')} />
-        <NavLink href='#services' label={t('services')} />
-        <NavLink href='#skills' label={t('skills')} />
-        <NavLink href='#pastExperiences' label={t('pastExperiences')} />
-        <NavLink href='#contact' label={t('contact')} />
-      </div>
+    <div className='border-b-[2px] border-cyan-700 bg-neutral-900 sticky top-0 z-50 w-full h-12 px-2 shadow text-neutral-200 text-xs md:text-sm items-center grid grid-cols-3 md:grid-cols-6'>
+      <NavLink href='#aboutMe' label={t('aboutMe')} />
+      <NavLink href='#services' label={t('services')} />
+      <NavLink href='#skills' label={t('skills')} />
+      <NavLink href='#pastExperiences' label={t('pastExperiences')} />
+      <NavLink href='#contact' label={t('contact')} last />
       <LangChanger locale={locale} />
     </div>
   );
