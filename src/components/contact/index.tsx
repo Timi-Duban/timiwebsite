@@ -26,7 +26,7 @@ export default async function Contact (props: IContactProps) {
       </div>
       {/* @ts-ignore - NextJS automatically passes down the <a> tag attributes*/}
       <Link href={`/cv_${locale}.pdf`} alt='Download my CV' target='_blank' rel='noopener noreferrer' locale={false}> 
-      <div className='flex justify-center text-center pt-6'>
+      <div className='flex justify-center text-center pt-6 hover:font-bold hover:md:font-semibold'>
         <DownloadIcon />
         <p className='ml-2'>{t('downloadCV')}</p>
       </div>

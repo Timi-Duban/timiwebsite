@@ -3,14 +3,14 @@ import Link from "next/link";
 interface INavLinkProps {
   href: string,
   label: string,
-  last?: boolean
 }
 export function NavLink (props: INavLinkProps) {
-  const className = 'px-1 md:px-2 border-l-2 md:first:border-l-0 border-cyan-700 h-[55%] flex justify-center items-center' + 
-    (props.last ? ' border-r-2 md:border-r-0 -mr-[2px]' : '');
+  const className = 'px-1 md:px-2 border-l-2 first:border-l-0 border-cyan-700 h-[55%] flex justify-center items-center hover:font-bold' + 
+    (props.href === '#contact' ? ' border-r-2 md:border-r-0 -mr-[2px]' : '') +
+    (props.href === '#pastExperiences' ? ' border-l-0 md:border-l-2' : '');
   return (
-    <div className={className}>
-      <Link href={props.href}>{props.label}</Link>
-    </div>
+    <Link href={props.href} className={className}>
+        {props.label}
+    </Link>
   );
 }
