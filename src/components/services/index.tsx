@@ -11,7 +11,7 @@ export default async function Services (props: IServicesProps) {
     <div className='card max-md:my-0 md:ml-3 bg-neutral-700 flex flex-1 flex-col md:bg-neutral-200'
       id='services'>
       <TitleDl title={t('services')} />
-      <div className='flex flex-1 flex-row text-neutral-50 text-center md:text-current px-5 py-3'>
+      <div className='flex flex-1 flex-row text-neutral-50 text-center md:text-current px-5 py-3 md:py-6'>
         <div className='h-full flex flex-1 flex-col border-r border-cyan-700'>
           <div className='flex flex-row justify-center items-center'>
             <h2 className='text-lg md:font-semibold mx-1'>{t('mobileApp')}</h2>

@@ -69,16 +69,15 @@ export default function NavClient ({children}: INavClientProps) {
       active([skillsL]);
       return;
     }
+    const contactTop = contactC?.getBoundingClientRect().top ?? 1;
     const toBottom = (window.innerHeight + Math.ceil(window.scrollY)) >= document.body.offsetHeight;    
-    if (toBottom) {
+    if (toBottom || (contactTop < scrollMargin)) {
       active([contactL]);
       return;
     }
-    const contactTop = contactC?.getBoundingClientRect().top ?? 1;
-    if (contactTop > scrollMargin) {
-      active([pastExperiencesL]);
-      return;
-    }
+    // contactTop >= scrollMargin && pastExperiencesTop < scrollMargin
+    active([pastExperiencesL]);
+    return;
     
   }
 

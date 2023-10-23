@@ -1,4 +1,4 @@
-# Welcome to my website!
+# Welcome to my website
 
 This simple, **mobile-first** website is using Next.js **Server Side Rendering** to optimize its performance and get the best possible **Search Engine Optimization**.
 
@@ -9,4 +9,4 @@ This simple, **mobile-first** website is using Next.js **Server Side Rendering**
 - Use of **TypeScript** to avoid runtime errors
 - Use of **Tailwind** for styling
 - Use of **Lighthouse** to detect possible improvements
-- Full use of Next.js 13 optimizations for caching, linking and image rendering.
+- Full use of Next.js 13 optimizations for caching, linking and image rendering

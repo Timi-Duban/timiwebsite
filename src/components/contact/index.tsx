@@ -17,7 +17,9 @@ export default async function Contact (props: IContactProps) {
         <Form />
         <div className='flex flex-1 flex-col justify-evenly items-center text-center'>
           <p className='text-lg font-medium md:font-normal'>{t('contactIntro')}</p>
-          <h2 className='text-xl font-bold md:font-semibold'>{t('contactMe')}</h2>
+          <h2
+          className='font-extrabold text-transparent text-3xl md:text-4xl bg-clip-text bg-gradient-to-l from-cyan-700 to-purple-700 md:from-teal-300 md:to-indigo-400'
+          >{t('contactMe')}</h2>
           <div className='flex w-full flex-col items-center font-medium md:font-normal'>
             <p className='text-lg/4 mb-2'>{t('findMe')}</p>
             <SocialLinks />
