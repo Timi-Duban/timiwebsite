@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Timi Duban Website',
-  description: 'A page about this Freelance developper',
+  description: 'My portfolio as a Freelance web and mobile developper',
 }
 
 export function generateStaticParams() {
