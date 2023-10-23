@@ -16,7 +16,7 @@ export default async function Skills (props: ISkillsProps) {
   return (
     <div className='card md:mt-0 bg-neutral-200 md:bg-neutral-700 md:text-neutral-50 pb-2' id="skills">
       <TitleLd title={t('skills')} />
-      <div className='flex justify-evenly flex-wrap p-4'>
+      <div className='flex justify-evenly flex-wrap p-4 gap-y-4'>
         <LabeledImage alt='MySQL logo' image={mySqlLogo} label="SQL" />
         <LabeledImage alt='MongoDB logo' image={mongoDbLogo} label="NoSQL" />
         <LabeledImage alt='Next.js Logo' image={nextJsLogo} label="Next.js" />
