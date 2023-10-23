@@ -1,6 +1,6 @@
 # Welcome to my website
 
-This simple, **mobile-first** website is using Next.js **Server Side Rendering** to optimize its performance and get the best possible **Search Engine Optimization**.
+This simple, **mobile-first** website is using Next.js **Static Site Generation** to optimize its performance and get the best possible **Search Engine Optimization**.
 
 ## Core features
 
