@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from '@/components/navbar'
 import initTranslations from '@/i18n';
 import TranslationsProvider from '@/components/translationsProvider';
@@ -32,6 +33,7 @@ async function RootLayout({children, params}: RootProps) {
       <body className={inter.className}>
         <TranslationsProvider namespaces={options.ns} locale={locale}>
           <Navbar locale={locale}/>
+          <Analytics />
           {children}
         </TranslationsProvider>
         </body>
