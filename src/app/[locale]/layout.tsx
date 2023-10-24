@@ -12,6 +12,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Timi Duban Website',
   description: 'My portfolio as a Freelance web and mobile developper',
+  verification: {
+    google: '2RYNJJeA8ANHT6dx21J78BJHxsDNLyTRXYM6uV3-E0s'
+  }
 }
 
 export function generateStaticParams() {
