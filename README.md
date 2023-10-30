@@ -2,6 +2,10 @@
 
 This simple, **mobile-first** website is using Next.js **Static Site Generation** to optimize its performance and get the best possible **Search Engine Optimization**.
 
+## See me
+
+This project is hosted with vercel at <https://timi-duban.vercel.app>
+
 ## Core features
 
 - Internationalization using **i18n**, to translate from French to English
