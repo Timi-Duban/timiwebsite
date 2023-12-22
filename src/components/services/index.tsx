@@ -8,23 +8,23 @@ export default async function Services (props: IServicesProps) {
   const { t } = await initTranslations(locale, ['common']);
 
   return (
-    <div className='card max-md:my-0 md:ml-3 bg-neutral-700 flex flex-1 flex-col md:bg-neutral-200'
+    <div className='flex flex-col flex-1 card bg-neutral-700 md:bg-neutral-200'
       id='services'>
       <TitleDl title={t('services')} />
-      <div className='flex flex-1 flex-row text-neutral-50 text-center md:text-current px-5 py-3 md:py-6'>
-        <div className='h-full flex flex-1 flex-col border-r border-cyan-700'>
-          <div className='flex flex-row justify-center items-center'>
-            <h2 className='text-lg md:font-semibold mx-1'>{t('mobileApp')}</h2>
+      <div className='flex flex-row flex-1 px-5 py-3 text-center text-neutral-50 md:text-current md:py-6'>
+        <div className='flex flex-col flex-1 h-full border-r border-cyan-700'>
+          <div className='flex flex-row items-center justify-center'>
+            <h2 className='mx-1 text-lg md:font-semibold'>{t('mobileApp')}</h2>
             <PhoneIcon />
           </div>
-            <p className='flex flex-1 items-center text-xs font-light md:font-normal whitespace-pre-wrap p-2 md:mt-5'>{t('mobileBody')}</p>
+            <p className='flex items-center flex-1 p-2 text-xs font-light whitespace-pre-wrap md:font-normal md:mt-5'>{t('mobileBody')}</p>
         </div>
-        <div className='h-full flex flex-1 flex-col'>
-          <div className='flex flex-row justify-center items-center'>
-            <h2 className='text-lg md:font-semibold mx-2'>{t('webApp')}</h2>
+        <div className='flex flex-col flex-1 h-full'>
+          <div className='flex flex-row items-center justify-center'>
+            <h2 className='mx-2 text-lg md:font-semibold'>{t('webApp')}</h2>
             <LaptopIcon />
           </div>
-          <p className='flex flex-1 items-center text-xs font-light md:font-normal whitespace-pre-wrap m-2 md:mt-5'>{t('webBody')}</p>
+          <p className='flex items-center flex-1 m-2 text-xs font-light whitespace-pre-wrap md:font-normal md:mt-5'>{t('webBody')}</p>
         </div>
       </div>
     </div>

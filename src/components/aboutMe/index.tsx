@@ -9,9 +9,9 @@ export default async function AboutMe (props: IAboutMeProps) {
   const { t } = await initTranslations(locale, ['common']);
 
   return (
-    <div className='card md:mr-3 bg-neutral-200 flex-1' id='aboutMe'>
+    <div className='flex-1 card bg-neutral-200' id='aboutMe'>
       <TitleL title={t('aboutMe')} />
-      <div className='p-7 text-xs whitespace-pre-wrap text-justify leading-tight'>
+      <div className='text-xs leading-tight text-justify whitespace-pre-wrap p-7'>
         <div className='flex'>
           <p className='flex flex-1 pr-10'>{t('abMeIntro')}</p>
           <p className='rounded-full w-[80px] h-[80px] mx-1 lg:w-[120px] lg:h-[120px] lg:mx-8 -mt-3 lg:-mt-10 relative overflow-hidden'>
@@ -22,11 +22,11 @@ export default async function AboutMe (props: IAboutMeProps) {
             />
           </p>
         </div>
-        <h2 className='font-bold mt-2 mb-0'>{t('abMeQuality')}</h2>
+        <h2 className='mt-2 mb-0 font-bold'>{t('abMeQuality')}</h2>
         <p>{t('abMeQualityB')}</p>
-          <h2 className='font-bold mt-1'>{t('abMeSec')}</h2>
+          <h2 className='mt-1 font-bold'>{t('abMeSec')}</h2>
           <p>{t('abMeSecB')}</p>
-          <h2 className='font-bold mt-1'>{t('abMeTransparency')}</h2>
+          <h2 className='mt-1 font-bold'>{t('abMeTransparency')}</h2>
           <p>{t('abMeTransparencyB')}</p>
       </div>
     </div>

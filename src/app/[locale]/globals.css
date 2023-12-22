@@ -8,6 +8,7 @@ html {
 
 @layer components {
     .card {
+        /*
         border-radius: 1rem;
         margin: 1.5rem;
         width: 93%;
@@ -15,5 +16,6 @@ html {
         margin-right: auto;
         border-width: 3px;
         border-color: rgb(22 78 99);
+        */
     }
 }

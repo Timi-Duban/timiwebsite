@@ -10,7 +10,7 @@ export default async function Home({params}: IHomeProps) {
 
   return (
     <div className='bg-gradient-to-br from-teal-500 via-cyan-700 via-35% to-purple-800 py-[1px]'>
-      <div className='flex flex-col md:flex-row md:w-[93%] md:mx-auto'>
+      <div className='flex flex-col md:flex-row md:mx-auto'>
         <AboutMe locale={locale} />
         <Services locale={locale} />
       </div>
